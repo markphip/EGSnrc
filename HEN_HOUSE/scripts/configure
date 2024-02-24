@@ -133,6 +133,10 @@ if test "x$system_name" = xdarwin; then
 fi
 echo "$canonical_system" >&2
 is_x86_64=$(echo $canonical_system | grep x86_64)
+cpu_arch=$(uname -p)
+if test x$cpu_arch = xaarch64; then
+  memory_model=""
+fi
 
 printf $format "Checking for make ... " >&2
 have_make=no
