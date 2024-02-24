@@ -53,3 +53,9 @@ html
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+### ignore devcontainer files
+*devcontainer*
+.qmake.stash
+egs_configuration
+HEN_HOUSE/gui/
