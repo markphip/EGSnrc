@@ -1,6 +1,9 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/cpp",
+  "image": "ubuntu:22.04",
   "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "username": "vscode"
+    },
     "ghcr.io/devcontainers/features/desktop-lite:1": {}
   },
   "onCreateCommand": ".devcontainer/on-create.sh",
