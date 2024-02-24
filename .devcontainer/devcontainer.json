@@ -1,0 +1,14 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/cpp",
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
+  },
+  "onCreateCommand": ".devcontainer/on-create.sh",
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": {
+      "label": "desktop",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
