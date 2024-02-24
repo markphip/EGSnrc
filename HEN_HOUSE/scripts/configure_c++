@@ -170,7 +170,7 @@ if test "x$system_name" = xdarwin; then
 fi
 cpu_arch=$(uname -p)
 if test x$cpu_arch = xaarch64; then
-  memory_model=""
+  memory_model="-Wno-narrowing"
 fi
 
 case $CXX in
