@@ -10,7 +10,7 @@ sudo apt install -y git gcc g++ gfortran make tk wish grace libmotif-dev expect 
 # Build the application
 echo "::step::Building EGSnrc ..."
 export USER=vscode
-/workspaces/EGSnrc/HEN_HOUSE/scripts/configure.expect devcontainer.conf 1 || true
+/workspaces/EGSnrc/HEN_HOUSE/scripts/configure.expect devcontainer.conf 3 || true
 
 # Configure .bashrc
 echo "export EGS_HOME=/workspaces/EGSnrc/egs_home/" >> ~/.bashrc
